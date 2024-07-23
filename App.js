@@ -24,19 +24,20 @@ const App = () => {
     {key: '7', value: 'FJK 815 - EUSTACLIO OCORO'}
   ];
   const labelPlanillas = "Ingrese Numero de Planilla(s)";
-
+  const lblSelectMacrozona = "Seleccione Macro Zona";
+  const lblSelectcontratista = "Seleccione Contratista";
   return (
     <View>
       <View style={{backgroundColor: 'green', width: 150, height: 150}}></View>
       <SelectList
-        placeholder='Seleccione Macro Zona'
+        placeholder={{lblSelectMacrozona}}
         setSelected={val => setcontratista(val)}
         data={macrozonaData}
         save="value"
         search="True"
       />
       <SelectList
-      placeholder='Seleccione Contratista'
+      placeholder={{lblSelectcontratista}}
         setSelected={val => set(val)}
         data={conductorData}
         save="value"
